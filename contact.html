@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Dimitra 's portfolio - A developer 's portfolio</title> 
+        <meta name="author" content="Dimitra Mazaraki">  
+        <!-- favicon -->
+        <link rel="icon" href="favicona.ico" type="image/x-icon">
+        <!-- styles -->
+            <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/about.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/contact.css">
+        <!-- JS -->
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body>
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger">
+                <div></div>
+            </div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="#">Contact me</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="showcase">
+            <div class="container showcase-inner">
+            <form action="https://formspree.io/dimitramazaraki@gmail.com" method="POST" id="contact-me-form">
+                <h2>Contact me</h2>    
+                <div class="groupform">
+                    <label for="name"></label>
+                    <input type="text" id="name" name="fullname" placeholder="Name..." required>
+                    <label for="email"></label>
+                    <input type="email" id="email" name="_replyto" placeholder="Email..." required>
+                    <label for="msg"></label>
+                    <textarea name="message" id="msg" cols="30" rows="10" placeholder="Your message..." required></textarea>
+                </div>
+                <div class="submit-btn">
+                        <input type="button" role="button" form="contact-me-form" class="btn" name="submit" value="Send" formmethod="post">
+                </div>
+            </form>
+
+            </div>
+        </header>
+    </body>
+</html>

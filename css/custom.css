@@ -1,0 +1,249 @@
+:root {
+    --primary-color: rgba(15, 140, 160, .75);
+    --overlay-color: rgba(24,39, 51, .85);
+    --menu-speed: .75s;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #212529; 
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #777592; 
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.4;
+}
+
+.container {
+    max-width: 1500px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 3rem;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-rows: 3 1fr;
+    grid-row-gap: 5rem;
+}
+
+.showcase {
+    background-color: var(--primary-color);
+    color: white;
+    position: relative;
+}
+
+.container::before  {
+    content: '';
+    /* background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(24,22,22,1) 89%, rgba(15, 140, 160, .75) 100%) repeat; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+header {
+    height: 60vh;
+}
+
+.showcase .showcase-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.showcase-inner #prj h2 {
+    text-align: center;
+}
+
+.showcase h1 {
+    font-size: 4rem;
+    text-align: right;
+    
+}
+
+.showcase h2 {
+    text-align: right;
+    font-size: 2rem;
+    letter-spacing: .08em;
+}
+
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.social-media a {
+    position: absolute;
+    display: block;
+    font-size: 2rem;
+    letter-spacing: .7em;
+    text-align: right;
+    text-decoration: none;
+    color: white;
+    margin-left: 27.6vw;
+    margin-top: 3vh;
+    
+}
+
+.social-media a:first-child {
+    left: 58vw;
+}
+
+.social-media a:nth-child(2){
+    left: 62vw;
+}
+
+#interests {
+    letter-spacing: .2rem;
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+#interests > h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+
+.btn {
+    display: inline-block;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    padding: .75rem 1.5rem;
+    margin-top: 1rem;
+    text-decoration: underline;
+    transition: opacity 1s ease-in;
+}
+
+.btn:hover {
+    opacity: .7;
+}
+
+.line {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    position: relative;
+    width: 50vw;
+}
+
+.line span {
+    border: 2px solid white;
+    position: absolute;
+}
+
+.line .left-line, .line .right-line {
+    width: 20vw;
+    border-radius: 2px;
+    float: left;
+    left: 24vw;
+}
+
+.line .right-line {
+    float: right;
+    left: 54vw;
+}
+
+.line .middle-circle {
+    background: #fff;
+    width: .8em;
+    height: .8em;
+    border-radius: 50%;
+    float: left;
+    left: 49vw;
+}
+
+
+footer:before {
+    content: '';
+    background: url('https://images.pexels.com/photos/533923/pexels-photo-533923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center center/cover;
+}
+
+#footer__section {
+    position: relative;
+}
+
+#footer__section > h4 {
+    position: fixed;
+    bottom: 2rem;
+    left: 3.3vw;
+    letter-spacing: .07rem;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 4px 16px -2px rgba(24,39, 51, .2); 
+    box-shadow: 3px 4px 16px -2px rgba(24,39, 51, .2);
+    
+}
+
+#footer__section > h4.animate{
+    -webkit-animation:appear 2s ease .5s 1 normal;
+    -moz-animation:appear 2s ease .5s 1 normal;
+    -ms-animation:appear 2s ease .5s 1 normal;
+    animation:appear 2s ease .5s 1 normal;
+}
+    
+@-webkit-keyframes appear {
+    0% {
+        left: -20vw;
+    }
+    100% {
+        left: 3.3vw;
+    }
+}
+
+@keyframes appear {
+    0% {
+        left: -20vw;
+    }
+    100% {
+        left: 3.3vw;
+    }
+}
+
+/* MEDIA QUERIES */
+/* @media only screen and (max-width: 2560px), (min-width:1440px){
+    .social-media a {
+        margin-left: 27vw;
+    }
+
+    .social-media a:first-child {
+        left: 22vw;
+    }
+}
+
+@media only screen and (max-width: 1439px), (min-width:1024px){
+    .social-media a {
+        margin-left: 65vh;
+    }
+
+    .social-media a:first-child {
+        left: 27vw;
+    }
+} */

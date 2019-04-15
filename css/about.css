@@ -1,0 +1,54 @@
+#about > h2 {
+    text-align: center !important;
+    margin-bottom: 2rem;
+}
+
+
+#about-and-contact {
+    display: grid;
+    padding: 0 12vw 0 9vw;
+    grid-template-columns: 1fr .5fr 1fr;
+    grid-template-areas: "about free contact";
+}
+
+#about {
+    grid-area: about;
+}
+
+#free {
+    grid-area: free;
+}
+
+section#about > img {
+    margin-bottom: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 200px;
+    opacity: .9;
+    width: 15vw !important;
+    height: 30vh !important;
+}
+
+/* MEDIA QUERIES */
+/* ----- MOBILE ----------- */
+@media only screen and (max-width: 992px) {
+    section#about > img {
+        width: 12.5vw !important;
+        height: 25vh !important;
+    } 
+}
+
+@media only screen and (max-width: 768px) {
+    section#about > img {
+        width: 10vw !important;
+        height: 20vh !important;
+    }
+}
+/* ----- landscape ------- */
+/* @media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+    section#about > img {
+        height: 15vh !important;
+    }  
+} */
+

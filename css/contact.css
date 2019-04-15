@@ -1,0 +1,68 @@
+#contact{
+    display: table;
+}
+
+.groupform {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 2vh;
+}
+
+form > h2 {
+    text-align: center !important;
+}
+
+.groupform input {
+    width: 20vw;
+    height: 7vh;
+}
+
+.groupform input[type="text"], .groupform input[type="email"], .groupform textarea {
+    border: 2px solid var(--overlay-color);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-left-radius: 7px;
+    background: var(--primary-color);
+}
+
+.btn {
+    text-decoration: none;
+    border: 2px solid var(--overlay-color); 
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+
+.btn:hover {
+    background: var(--overlay-color);
+    cursor: pointer;
+}
+
+.btn:active {
+    background: var(--overlay-color);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.groupform input::placeholder, .groupform textarea::placeholder {
+    color: white;
+    padding: 2vw;
+    padding-top: 1vw;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1024px), (min-width: 769px){
+    .groupform input {
+        width: 20rem;
+        height: 7vh;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .groupform input {
+        width: 20rem;
+        height: 7vh;
+    }
+} 
+
+

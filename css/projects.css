@@ -1,0 +1,42 @@
+#prj > h2 {
+    margin-bottom: 2rem;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects a img {
+    margin: 0 10px 0;
+    border: none;
+    border: 1px solid var(--overlay-color);
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 10px 1px rgba(24,39, 51, .65);
+    box-shadow: 5px 5px 10px 1px rgba(24,39, 51, .65);
+}
+
+figcaption {
+    margin: 0 0 10px;
+    line-height: 3vh;
+    letter-spacing: .03em;
+}
+
+/* #prj h2 {
+    text-align: center;
+}
+.projects{
+    display: inline-grid !important;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 100px;
+    justify-content: center;
+    align-content: center;
+}
+
+.projects a  img.img-projects{
+    margin-left: auto;
+    margin-right: auto;
+    opacity: .9;
+    width: 1vw;
+} */
+

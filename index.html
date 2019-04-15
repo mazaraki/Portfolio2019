@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Dimitra 's portfolio - A developer 's portfolio</title> 
+        <meta name="author" content="Dimitra Mazaraki">  
+        <!-- favicon -->
+        <link rel="icon" href="favicona.ico" type="image/x-icon">
+        <!-- styles -->
+            <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/projects.css">
+        <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="css/about.css">
+        <!-- JS -->
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body>
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger">
+                <div></div>
+            </div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#prj">Projects</a></li>
+                            <li><a href="#contact">Contact me</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="wrapper" class="showcase">
+            <header>
+            <div class="container showcase-inner">
+                <section id="home">
+                    <div>
+                        <h1>Hello World!</h1>
+                        <h1>I am Dimitra.</h1>
+                    </div>
+                    <h2>
+                        You can find me in:
+                    </h2>      
+                    <div class="social-media">
+                        <a class="fab fa-linkedin" href="https://www.linkedin.com/in/dimitramazaraki/"></a>
+                        <a class="fab fa-github-square" href="https://github.com/mazaraki"></a>
+                    </div>
+                </section>
+                <section id="interests">
+                    <h2>My interests are: </h2>
+                    <h3>Front End. Always put user first.</h3>
+                    <h5>HTML, CSS</h5>
+                    <h5>JavaScript, Angular</h5>
+                    <h5>Java</h5>
+                    <h5>Unity</h5>
+                </section>
+            </div>
+        </header>
+        <div class="line"><span class="left-line"></span><span class="middle-circle"></span><span class="right-line"></span></div>
+            <div class="container showcase-inner">
+                <section id="prj" class="prj">
+                    <h2>Projects</h2>    
+                    <div class="projects">
+                        
+                            <figure>
+                                <a href="https://philosgreece.eu/" target="_blank">
+                                    <img width="300" height="200" class="img-project" src="img/prj/philos.png" alt="PHILOS Greece">
+                                </a>
+                                <figcaption>&lbrace;&lbrace; Joomla, HTML5, CSS3, Bootstrap,<br>JavaScript, jQuery, PHP &rbrace;&rbrace;</figcaption>
+                            </figure>
+                                                
+                            <figure>
+                                <a href="http://mazaraki.github.io/conFusion/" target="_blank">
+                                    <img width="300" height="200" class="img-project" src="img/prj/conFusion.png" alt="Github Confusion project">
+                                </a>
+                                <figcaption>&lbrace;&lbrace; HTML5, Bootstrap, JavaScript &rbrace;&rbrace;</figcaption>
+                            </figure>
+                        
+                        
+                            <figure>
+                                <a href="https://mazaraki.github.io/TheGym/" target="_blank">
+                                    <img width="300" height="200" class="img-project" src="img/prj/theGym.png" alt="The Gym">
+                                </a>
+                                <figcaption>&lbrace;&lbrace; HTML, CSS &rbrace;&rbrace;</figcaption>
+                            </figure>
+                        
+                    </div>
+                </section>
+            </div>
+        <div class="line"><span class="left-line"></span><span class="middle-circle"></span><span class="right-line"></span></div>
+            <div class="container showcase-inner">
+                <div id="about-and-contact" class="">
+                    <section id="about">
+                        <h2>About me</h2>
+                        <img src="img/nice-960_720.jpg" alt="Dimitra Mazaraki">   
+                        <p>I come from Greece.<br>Currently I am living in Nice.</p>
+                        <br>
+                        <p>Feel free to see my work and do not hesitate to contact me.</p>
+                    </section>
+                    <section id="free"></section>
+                    <section id="contact">
+                        <form action="https://formspree.io/dimitramazaraki@gmail.com" method="POST" id="contact-me-form">
+                            <h2>Contact me</h2>    
+                            <div class="groupform">
+                                <label for="name"></label>
+                                <input type="text" id="name" name="fullname" placeholder="Name..." required>
+                                <label for="email"></label>
+                                <input type="email" id="email" name="_replyto" placeholder="Email..." required>
+                                <label for="msg"></label>
+                                <textarea name="message" id="msg" cols="30" rows="10" placeholder="Your message..." required></textarea>
+                            </div>
+                            <div class="submit-btn">
+                                    <input type="button" role="button" form="contact-me-form" class="btn" name="submit" value="Send" formmethod="post">
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+            <div class="line"><span class="left-line"></span><span class="middle-circle"></span><span class="right-line"></span></div>
+            <footer class="container showcase-inner">
+                <section id="footer__section">
+                    <h4 class="animate">More will come<br>in the future.<br>Stay tuned!</h4>
+                </section>
+            </footer>       
+        </div>
+    </body>
+</html>
