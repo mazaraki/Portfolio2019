@@ -489,9 +489,10 @@ section#about > img {
 }
 
 .groupform {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-row-gap: 2vh;
+    display: block;
+    /* grid-template-columns: 1fr 1fr;
+    grid-row: 3 !important;
+    grid-row-gap: 2vh; */
 }
 
 form > h2 {
@@ -499,11 +500,14 @@ form > h2 {
 }
 
 .groupform input {
+    margin-bottom: 2vh;
+    margin-left: 2vw;
     width: 20vw;
     height: 7vh;
 }
 
 .groupform input[type="text"], .groupform input[type="email"], .groupform textarea {
+    display: block;
     border: 2px solid var(--overlay-color);
     border-top: none;
     border-left: none;
@@ -512,19 +516,29 @@ form > h2 {
     background: var(--primary-color);
 }
 
-.btn {
+.groupform textarea {
+    width: 20.8vw;
+    margin-left: 2vw;
+}
+
+button[type="submit"] {
+    margin-top: 2vh;
+    margin-left: -1.5vw;
     text-decoration: none;
     border: 2px solid var(--overlay-color); 
     border-radius: 8px;
+    background: var(--primary-color);
     font-size: 1.2rem;
+    width: 8vw;
+    height: 8vh;
 }
 
-.btn:hover {
+button[type="submit"]:hover {
     background: var(--overlay-color);
     cursor: pointer;
 }
 
-.btn:active {
+button[type="submit"]:active {
     background: var(--overlay-color);
     color: var(--primary-color);
     cursor: pointer;
@@ -534,6 +548,15 @@ form > h2 {
     color: white;
     padding: 2vw;
     padding-top: 1vw;
+}
+
+#contact h6 {
+    margin-left: -1.4vw;
+    letter-spacing: .1vw;
+}
+
+#contact h6 a {
+    color: var(--overlay-color);
 }
 
 /* MEDIA QUERIES */
